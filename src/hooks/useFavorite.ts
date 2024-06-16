@@ -53,6 +53,8 @@ export const useFavorite = (id: number | undefined) => {
 
          localStorage.setItem('favorites', JSON.stringify(favorites));
          setFavoritesItems(favorites);
+      } else {
+         localStorage.setItem('favorites', JSON.stringify([]));
       }
    };
 
