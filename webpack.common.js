@@ -53,7 +53,7 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-         title: 'Modsen Art Museum',
+         title: 'Movie Base',
          template: path.join(__dirname, 'public', 'index.html'),
       }),
       new dotenv(),
