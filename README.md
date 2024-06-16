@@ -30,3 +30,6 @@
    npm start
    ```
    Откройте браузер и перейдите по адресу http://localhost:3001/.
+
+Также вы можете открыть [deploy](https://movies-base-xi.vercel.app/) проекта
+
