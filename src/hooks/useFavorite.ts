@@ -7,10 +7,6 @@ export const useFavorite = (id: number | undefined) => {
    const [isFav, setIsFav] = useState(false);
 
    useEffect(() => {
-      localStorage.setItem('favorites', JSON.stringify([]));
-   }, [])
-
-   useEffect(() => {
       const dataFromLocalStorage = localStorage.getItem('favorites');
 
       if (dataFromLocalStorage) {
@@ -21,6 +17,8 @@ export const useFavorite = (id: number | undefined) => {
 
          setFavoritesItems(favorites);
          setIsFav(isFavInFavorites);
+      } else {
+         localStorage.setItem('favorites', JSON.stringify([]));
       }
    }, [id]);
 
