@@ -19,7 +19,7 @@
 
    ```
    git clone https://github.com/KirSivogr/movies-base.git
-   cd vk
+   cd movies-base
    npm install
    ```
 
